@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* border: 1px solid red; */
+}
+
+body {
+    background-color: #000;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+@keyframes titleTo {
+    to{
+        margin-top: -50px;
+    }
+}
+
+@keyframes subtitleTo {
+    to{
+        margin-top: -50px;
+    }
+}
+
+@keyframes globeTo {
+    to{
+        margin-top: -70px;
+    }
+}
+
+/* header */
+#header {
+    width: 100%;
+    height: 100px;
+}
+
+.header-main {
+    width: 100%;
+    height: 100px;
+    
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part {
+    position: relative;
+}
+
+.e-part-1 {
+    position: absolute;
+    left: -16px;
+    top: -6px;
+}
+
+.letter-logo {
+    margin-left: 4px;
+}
+
+.x-part-1 {
+    position: absolute;
+    left: -44px;
+    top: -6px;
+}
+
+.x-part-2 {
+    position: absolute;
+    left: -35px;
+    top: 1px;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    font-size: 12px;
+    transition: .3s;
+}
+
+.main-menu-item {
+    margin-left: 20px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(175, 175, 175);
+    font-size: 12px;
+    transition: .6s;
+}
+
+.menu-item {
+    margin-left: 10px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+
+/* the title and subtitle section  */
+
+.section {
+    width: 100%;
+}
+
+.title {
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 60px;
+    transition: .6s;
+}
+
+.the-1 span {
+    animation: titleTo .8s forwards ease-in-out;
+}
+
+.the-2 span {
+    animation: subtitleTo 1s forwards ease-in-out;
+}
+
+.subtitle {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    color: white;
+    font-size: 16px;
+    transition: .6s;
+}
+
+.line-case {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.line {
+    width: 50px;
+    position: absolute;
+    left: 48%;
+    transform: rotate(90deg);
+}
+
+.section-globe {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-globe-img {
+    overflow: hidden;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: globeTo 1.5s forwards ease-in-out;
+}
+
+.main-globe-img img {
+    background-position: center;
+    background-size: contain;
+}
+
+/* the Falcon Heavy overview section and the spaceship image on the right */
+.falcon-main {
+    width: 100%;
+    height: 600px;
+
+    display: flex;
+}
+
+.main-list {
+    width: 55%;
+    height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sizes-of {
+    width: 200px;
+    height: 300px;
+    color: white;
+    
+    font-size: 14px;
+}
+
+.list-items {
+    height: 40px;
+}
+
+.item-subtitle {
+    height: 40px;
+    font-size: 20px;
+}
+
+.falcon-heavy {
+    height: 1100px;
+    width: 410px;
+    position: relative;
+    top: 50px;
+}
+
+.falcon-heavy img {
+    height: inherit;
+    position: absolute;
+    z-index: 1;
+}
+
+
+/* description about Falcon Heavy */
+.unmatched-list {
+    width: 55%;
+    height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.slogan {
+    width: 400px;
+    color: white;
+    font-size: 14px;
+}
+
+.slogan-main {
+    height: 50px;
+    font-size: 20px;
+}
+
+.slogan-item {
+    height: 200px;
+}
+
+
+/* footter section */
+.footer {
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-main {
+    width: 50%;
+    height: 250px;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.footer-items {
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-items a {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.footer-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-button button {
+    width: 155px;
+    height: 35px;
+    background-color: #000;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}

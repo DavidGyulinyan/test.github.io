@@ -1,0 +1,21 @@
+@media(min-width: 768px) and (max-width: 992px) {
+    
+    .main-globe-img img {
+        width: 1300px;
+    }
+
+    .sizes-of {
+        width: 190px;
+        height: 300px;
+    }
+
+    .falcon-heavy {
+        width: 300px;
+        left: 30px;
+    }
+
+    .falcon-heavy img {
+        width: 300px;
+        height: 900px;
+    }
+}
